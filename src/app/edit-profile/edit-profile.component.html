@@ -1,0 +1,16 @@
+<h2>Edit Profile</h2>
+    <form [formGroup]="profileForm" (ngSubmit)="saveProfile()">
+      <label>
+        Name:
+        <input type="text" formControlName="name">
+      </label>
+      <label>
+        Contact:
+        <input type="text" formControlName="contactInfo">
+      </label>
+      <label>
+        Bio:
+        <textarea formControlName="bio"></textarea>
+      </label>
+      <button type="submit">Save</button>
+    </form>
