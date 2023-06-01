@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Add this line to make the container fill the entire viewport height */
+  }
+  
+  h1, h2, h3, h4, h5, h5, button {
+    font-family: cursive;
+  }
+  
+  p, label, input {
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  table {
+    text-align: left;
+    margin-bottom: 1rem; /* Add this line to add spacing between the table and button */
+  }
+  
+  th, td {
+    padding: 0.3rem 1rem;
+    text-align: center;
+  }
+  
+  tr:nth-child(n) {
+    background-color: rgba(150, 197, 230, 0.2);
+  }
+  
+  button {
+    margin-top: 1rem; /* Add this line to add spacing above the button */
+    padding: 0.5rem;
+  }
+  
+  

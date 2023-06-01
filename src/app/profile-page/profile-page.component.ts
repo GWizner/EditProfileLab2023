@@ -16,24 +16,22 @@ export class ProfilePageComponent implements OnInit{
 
 
   ngOnInit(): void {
-    this.profileService.getUserProfile().subscribe((profile: UserProfile) => {
-      this.users = profile;
-    });
+    this.getUser();
   }
 
 
 
 
-  // getUsers(){
-  //   this.profileService.getUserProfile().subscribe(
+  getUser(){
+    this.profileService.getUserProfile().subscribe(
 
-  //     result => {
-  //       this.users = result
-  //       console.log(result);
-  //     }
+      result => {
+        this.users = result
+        console.log(result);
+      }
 
-  //   );
-  // }
+    );
+  }
 
   
 }

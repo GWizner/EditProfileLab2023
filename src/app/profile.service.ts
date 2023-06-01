@@ -9,6 +9,8 @@ export class ProfileService {
   [x: string]: any;
 
   
+  constructor() { }
+
   users: UserProfile = 
     {
       name: 'Grant Chirpus',
@@ -28,10 +30,4 @@ export class ProfileService {
     return of(profile);
     
   }
- 
-// It has a UserProfile object with initial values for name, contact info, and bio. It has two methods...
-// getUserProfile returns the profile object.
-// setUserProfile replaces the profile object with a new one. (Note: Depending on how you build your code, you might not need this function.)
-// (Tip: When generating the service, just call it Profile. ng will add on the Service part of the name.)
-
 }

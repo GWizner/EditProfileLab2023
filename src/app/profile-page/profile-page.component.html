@@ -1,9 +1,22 @@
-<div class="profile">
-    <!-- <img src="profile-picture.jpg" alt="Profile Picture" class="profile-picture"> -->
+<!-- <div class="profile">
+    <img src="profile-picture.jpg" alt="Profile Picture" class="profile-picture">
     <h2>{{ users.name }}</h2>
     <p>Contact: {{ users.contactInfo }}</p>
     <p>Bio: {{ users.bio }}</p>
     <button routerLink="/edit-profile">Edit Profile</button>
-  </div>
-
- 
+  </div> -->
+<div class="table-container">
+  <table class="profile">
+    <tr>
+      <td><h2>{{users.name}}</h2></td>
+    </tr>
+    <tr>
+      <td>{{users.contactInfo}}</td>
+    </tr>
+    <tr>
+      <td>{{users.bio}}</td>
+    </tr>
+  </table>
+  <button routerLink="/edit-profile">Edit Profile</button>
+</div>
+  
